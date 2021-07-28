@@ -1,0 +1,12 @@
+#Take input in list and arrange it in descending order
+nums = []
+nums.append(int(input("Enter a number: ")))
+
+while True:
+    b = input("Do you want to input more: ")
+    if b == 'yes':
+        nums.append(int(input("Enter a number: ")))
+    elif b == 'no':
+        nums.sort(reverse=True)
+        break
+print(nums)
